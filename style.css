@@ -1,27 +1,124 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
+    font-size: 16px;
+    background-color: #eaf4f8; /* very light blue */
+    color: dimgray; /* dark gray */
+    margin: 0;
+    padding: 15px;
 }
 
-/* Style the header */
-header {
+h1 {
+    text-align: center;
+    color: #0b3c7d; /* dark blue */
+    border-bottom: 4px solid #0b3c7d; /* dark blue */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    text-align: center;
+    color: #333; /* dark gray */
+    margin-top: 25px;
+}
+
+h3 {
+    text-align: center;
+    color: dimgray; /* dark gray */
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+p {
+    line-height: 1.7;
+    text-align: center;
+    margin: 12px 25px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 85%;
+    background-color: white; /* white */
+    padding: 12px;
+    border: 2px solid #c5d1e0; /* light steel blue */
+}
+
+ul {
+    margin: 20px 60px;
+    padding: 20px 30px 20px 50px;
+    background-color: white; /* white */
+    border-left: 6px solid #0b3c7d; /* dark blue */
+    border-radius: 4px;
+    list-style-position: outside;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 6px 0;
+    line-padding: 12px;
+}
+
+table {
+    width: 85%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: white; /* white */
+}
+
+th {
+    background-color: #0b3c7d; /* dark blue */
+    color: white; /* white */
+    padding: 12px;
+    border: 1px solid black; /* black */
+}
+
+td {
+    padding: 10px;
+    border: 1px solid black; /* black */
     text-align: center;
 }
 
-
-nav {
-  float: left;
-  width: 30%;
-  background: #ccc;
-  padding: 20px;
+a {
+    color: #0b3c7d; /* dark blue */
+    text-decoration: none;
+    font-weight: bold;
 }
 
-
-section::after {
-  content: "";
-  display: table;
-  clear: both;
+body p {
+    text-align: center;
+    padding: 16px; 
+    margin: 12px 0;
+    display: flex;
 }
 
-footer {
-  text-align: center;
+p a {
+    display: block;
+    padding: 24px;
+    margin: 8px auto;
+    background-color: #e1ecf4; /* pale blue */
+    border: 1px solid #0b3c7d; /* dark blue */
+    letter-spacing: 0.5px;
+    width: 80%;
+}
+
+.signature {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb; /* very light blue */
+    overflow: hidden;
+}
+
+.signature-box {
+    height: 100%;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.signature-box img {
+    max-width: 90%;
+    max-height: 45px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
