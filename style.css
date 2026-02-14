@@ -7,6 +7,12 @@ body {
     padding: 15px;
 }
 
+iframe {
+    width: 70%;
+    height: 85%;
+    color: red; /* red */
+}
+
 h1 {
     text-align: center;
     color: #0b3c7d; /* dark blue */
