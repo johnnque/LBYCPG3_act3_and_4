@@ -7,6 +7,12 @@ body {
     padding: 15px;
 }
 
+iframe {
+    width: 70%;
+    height: 85%;
+    color: red; /* red */
+}
+
 h1 {
     text-align: center;
     color: #0b3c7d; /* dark blue */
@@ -24,7 +30,14 @@ h2 {
 
 h3 {
     text-align: center;
-    color: dimgray; /* dark gray */
+    color: darkgray; /* dark gray */
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+h4 {
+    text-align: center;
+    color: rgb(255, 255, 255); /* dark gray */
     font-weight: normal;
     margin-top: 15px;
 }
@@ -123,9 +136,10 @@ article{
 
 
 .signature {
+    display :flex;      /* flex basically makes the signatures align horizontally */
     margin: 0;
     padding: 0;
-    background-color: #f4f7fb; /* very light blue */
+    background-color:#0b3c7d; /*dark blue*/
     overflow: hidden;
 }
 
@@ -133,6 +147,7 @@ article{
     height: 100%;
     text-align: center;
     padding-top: 12px;
+    color:#0b3c7d; /* dark blue */
 }
 
 .signature-box img {
@@ -162,3 +177,4 @@ article{
 footer {
     background-color: #0b3c7d;
 }
+
