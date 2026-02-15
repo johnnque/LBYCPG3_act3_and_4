@@ -2,44 +2,80 @@ body {
     font-family: Arial;
     font-size: 16px;
     background-color: #eaf4f8; /* very light blue */
-    color: dimgray; /* dark gray */
+    color: dimgray;
     margin: 0;
-    padding: 15px;
+    padding: 0;
 }
 
-iframe {
-    width: 70%;
-    height: 85%;
-    color: red; /* red */
+header {
+    padding-top: 20px;
 }
 
 h1 {
     text-align: center;
-    color: #0b3c7d; /* dark blue */
-    border-bottom: 4px solid #0b3c7d; /* dark blue */
+    color: #0b3c7d;
+    border-bottom: 4px solid #0b3c7d;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     letter-spacing: 1px;
 }
 
 h2 {
     text-align: center;
-    color: #333; /* dark gray */
+    color: #333;
     margin-top: 25px;
 }
 
 h3 {
     text-align: center;
-    color: darkgray; /* dark gray */
+    color: darkgray;
     font-weight: normal;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 h4 {
     text-align: center;
-    color: rgb(255, 255, 255); /* dark gray */
+    color: white;
     font-weight: normal;
-    margin-top: 15px;
+    margin-top: 10px;
+}
+
+section {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+nav {
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+
+nav p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 24px;
+    margin: 8px auto;
+    background-color: #e1ecf4;
+    border: 1px solid #0b3c7d;
+    color: #0b3c7d;
+    text-decoration: none;
+    font-weight: bold;
+    width: 80%;
+    letter-spacing: 0.5px;
+}
+
+iframe {
+    float: left;
+    width: 70%;
+    height: 650px;
+    border: 2px solid #0b3c7d;
+    background-color: #eaf4f8;
 }
 
 p {
@@ -48,20 +84,26 @@ p {
     margin: 12px 25px;
 }
 
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+
 img {
     display: block;
     margin: 20px auto;
     max-width: 85%;
-    background-color: white; /* white */
+    background-color: white;
     padding: 12px;
-    border: 2px solid #c5d1e0; /* light steel blue */
+    border: 2px solid #c5d1e0;
 }
 
 ul {
     margin: 20px 60px;
     padding: 20px 30px 20px 50px;
-    background-color: white; /* white */
-    border-left: 6px solid #0b3c7d; /* dark blue */
+    background-color: white;
+    border-left: 6px solid #0b3c7d;
     border-radius: 4px;
     list-style-position: outside;
 }
@@ -75,106 +117,106 @@ table {
     width: 85%;
     margin: 25px auto;
     border-collapse: collapse;
-    background-color: white; /* white */
+    background-color: white;
 }
 
 th {
-    background-color: #0b3c7d; /* dark blue */
-    color: white; /* white */
+    background-color: #0b3c7d;
+    color: white;
     padding: 12px;
-    border: 1px solid black; /* black */
+    border: 1px solid black;
 }
 
 td {
     padding: 10px;
-    border: 1px solid black; /* black */
+    border: 1px solid black;
     text-align: center;
 }
 
-a {
-    color: #0b3c7d; /* dark blue */
-    text-decoration: none;
-    font-weight: bold;
+#quizSection {
+    text-align: center;
+    margin-top: 40px;
 }
 
-body p {
-    text-align: center;
-    padding: 16px; 
-    margin: 12px 0;
+.quiz-container {
     display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
-p a {
-    display: block;
-    padding: 24px;
-    margin: 8px auto;
-    background-color: #e1ecf4; /* pale blue */
-    border: 1px solid #0b3c7d; /* dark blue */
-    letter-spacing: 0.5px;
-    width: 80%;
+.layers, .definitions {
+    width: 40%;
 }
 
-nav {
-    float: left;
-    width: 30%;
+.drag-item {
+    background-color: #0b3c7d;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    cursor: grab;
 }
 
-footer{
-    clear: left;
+.drop-zone {
+    background-color: white;
+    border: 2px dashed #0b3c7d;
+    padding: 15px;
+    margin: 10px;
+    min-height: 40px;
 }
 
-article{
-    float: left;
-    width: 70%;
+.quiz-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.drag-layer, .drag-def {
+    background-color: #0b3c7d;
+    color: white;
+    padding: 8px;
+    margin: 8px;
+    cursor: grab;
 }
 
-
-.signature {
-    display :flex;      /* flex basically makes the signatures align horizontally */
-    margin: 0;
-    padding: 0;
-    background-color:#0b3c7d; /*dark blue*/
-    overflow: hidden;
+.match-area {
+    margin-top: 20px;
 }
 
-.signature-box {
-    height: 100%;
-    text-align: center;
-    padding-top: 12px;
-    color:#0b3c7d; /* dark blue */
+.match-row {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
 }
 
-.signature-box img {
-    max-width: 90%;
-    max-height: 45px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.img-container {
-  float: left;
-  width: 25%;
-  padding: 5px;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.drop-layer, .drop-def {
+    width: 250px;
+    height: 40px;
+    border: 2px dashed #0b3c7d;
+    margin: 0 10px;
+    background-color: white;
 }
 
 footer {
+    clear: both;
     background-color: #0b3c7d;
+    padding: 20px 0;
 }
 
+.signature {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0b3c7d;
+    padding: 10px 0;
+}
+
+.signature img {
+    max-height: 60px;
+    object-fit: contain;
+    background-color: white;
+    padding: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
