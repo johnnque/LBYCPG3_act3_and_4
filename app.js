@@ -70,3 +70,84 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+/* 
+home.html interactive packet visualization part 
+(We could probably add colors so it counts as style changing. 
+Like make the other packets greyed out or something.)
+*/
+
+let currentLayer = 7;
+
+function packetUp(){
+    if(currentLayer < 7){
+        currentLayer ++;
+        clearPackets();
+        
+        switch(currentLayer){
+            case 1:
+                document.getElementById("physicalPacket").innerHTML = "[Binary Data]";
+                break;
+            case 2:
+                document.getElementById("dataLinkPacket").innerHTML = "[MAC Header][IP Header][TCP Header][Data][FCS]";
+                break;
+            case 3:
+                document.getElementById("networkPacket").innerHTML = "[IP Header][TCP Header][Data]";
+                break;
+            case 4:
+                document.getElementById("transportPacket").innerHTML = "[TCP Header][Data]";
+                break;
+            case 5:
+                document.getElementById("sessionPacket").innerHTML = "[Data]";
+                break;
+            case 6:
+                document.getElementById("presentationPacket").innerHTML = "[Data]";
+                break;
+            case 7:
+                document.getElementById("applicationPacket").innerHTML = "[Data]";
+                break;
+        }
+    }
+}
+
+
+function packetDown(){
+    if(currentLayer > 1){
+        currentLayer --;
+        clearPackets();
+        
+        switch(currentLayer){
+            case 1:
+                document.getElementById("physicalPacket").innerHTML = "[Binary Data]";
+                break;
+            case 2:
+                document.getElementById("dataLinkPacket").innerHTML = "[MAC Header][IP Header][TCP Header][Data][FCS]";
+                break;
+            case 3:
+                document.getElementById("networkPacket").innerHTML = "[IP Header][TCP Header][Data]";
+                break;
+            case 4:
+                document.getElementById("transportPacket").innerHTML = "[TCP Header][Data]";
+                break;
+            case 5:
+                document.getElementById("sessionPacket").innerHTML = "[Data]";
+                break;
+            case 6:
+                document.getElementById("presentationPacket").innerHTML = "[Data]";
+                break;
+            case 7:
+                document.getElementById("applicationPacket").innerHTML = "[Data]";
+                break;
+        }
+    }
+}
+
+function clearPackets(){
+    document.getElementById("physicalPacket").innerHTML = "";
+    document.getElementById("dataLinkPacket").innerHTML = "";
+    document.getElementById("networkPacket").innerHTML = "";
+    document.getElementById("transportPacket").innerHTML = "";
+    document.getElementById("sessionPacket").innerHTML = "";
+    document.getElementById("presentationPacket").innerHTML = "";
+    document.getElementById("applicationPacket").innerHTML = "";
+}

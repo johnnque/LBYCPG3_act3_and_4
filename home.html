@@ -7,6 +7,7 @@
         
     </HEAD>
 
+    
     <BODY>
         <H1>
             There are two common network models to represent the flow of data Communication: The OSI Model and the TCP/IP MODEL  
@@ -40,7 +41,58 @@
                 <TD>Does not have a separate presentation and separate layer</TD>
             </TR>
         </TABLE>    
+    
+    <!-- Interactive packet visualization part -->
+    <MAIN> 
+        <SECTION id = "interactivePacketSection">
+            <H2>
+                Interactive Packet Visualization
+            </H2>
+            <TABLE>
+                <TR>
+                    <TD>Application Layer</TD>
+                    <TD id = "applicationPacket">[DATA]</TD>
+                </TR>
 
+                <TR>
+                    <TD>Presentation Layer</TD>
+                    <TD id = "presentationPacket"></TD>
+                </TR>
+
+                <TR>
+                    <TD>Session Layer</TD>
+                    <TD id = "sessionPacket"></TD>
+                </TR>
+
+                <TR>
+                    <TD>Transport Layer</TD>
+                    <TD id = "transportPacket"></TD>
+                </TR>
+
+                <TR>
+                    <TD>Network Layer</TD>
+                    <TD id = "networkPacket"></TD>
+                </TR>
+
+                <TR>
+                    <TD>Data Link Layer</TD>
+                    <TD id = "dataLinkPacket"></TD>
+                </TR>
+
+                <TR>
+                    <TD>Physical Layer</TD>
+                    <TD id = "physicalPacket"></TD>
+                </TR>
+            </TABLE>
+            
+            <BUTTON id="upButton" onClick = "packetUp()"> UP </BUTTON>
+            <BUTTON id="downButton" onClick = "packetDown()"> DOWN </BUTTON>
+
+
+
+        </SECTION>
+    </MAIN>
+    <script src="app.js"></script>
     </BODY>
 
 </HTML>
