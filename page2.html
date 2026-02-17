@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>OSI Model - HTML5 Page</title>
+    <title>TCPIP Model - HTML5 Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,7 +17,8 @@
         <section>
             <article>
                 <p>
-                    
+                    The Transmission Control Protocol/Internet Protocol, TCP/IP, model is a practical framework as opposed to OSI's theoretical model. 
+                    It was developed by the Defense Advanced Research Projects Agency (DARPA) and consists of 4 layers
                 </p>
             </article>
         </section>
@@ -25,21 +26,18 @@
         <section>
             <figure>
                 <img src="Images/tcpip_model.png" alt="Diagram of the TCPIP Model Layers">
-                <figcaption>Figure 1: The Seven Layers of the OSI Model</figcaption>
+                <figcaption>Figure 1: The Four Layers of the TCPIP Model</figcaption>
             </figure>
         </section>
 
         <section>
-            <h2>The 7 Layers of the OSI Model</h2>
+            <h2>The TCP/IP Model is divided into 4 distinct layers:</h2>
 
             <ul>
-                <li><b>Application Layer (Layer 7)</b> – Creates the data to be transferred.</li>
-                <li><b>Presentation Layer (Layer 6)</b> – Formats, encrypts, and compresses data.</li>
-                <li><b>Session Layer (Layer 5)</b> – Establishes, manages, and terminates connections.</li>
-                <li><b>Transport Layer (Layer 4)</b> – Breaks data into segments for reliable delivery.</li>
-                <li><b>Network Layer (Layer 3)</b> – Breaks segments into packets and handles routing.</li>
-                <li><b>Data Link Layer (Layer 2)</b> – Converts packets into frames for transmission.</li>
-                <li><b>Physical Layer (Layer 1)</b> – Transmits raw bits through physical media.</li>
+                <li><b>Application Layer (Layer 1)</b> – Serves as the user's interface to communicate through the network.</li>
+                <li><b>Transport Layer (Layer 2)</b> – Handles data flow and error checking.</li>
+                <li><b>Internet Layer (Layer 3)</b> – Involved in logical addressing and routing of payloads.</li>
+                <li><b>Network Access Layer (Layer 4)</b> – Facilitates physical movement of data over the network medium.</li>
             </ul>
         </section>
 
@@ -47,20 +45,10 @@
             <h2 onclick=toggleDisplay(event)>1. Encapsulation and Data Flow ▼</h2>
 
             <p class="toggleable">
-                The OSI layers are numbered from bottom to top, with the Physical Layer 
-                as Layer 1 and the Application Layer as Layer 7.
-                <br>
-                When data is sent, it starts at the Application Layer and travels 
-                downward through the layers. At each layer, additional information 
-                (headers) is added — a process known as <b>encapsulation</b>. 
-                These headers help identify the destination and manage communication.
-                <br>
-                When the data reaches the receiving device, the process is reversed. 
-                The data moves upward through the layers, and each layer removes its 
-                corresponding header — a process called <b>decapsulation</b>.
-                <br>
-                Each layer acts as a checkpoint in the communication process. No layer 
-                can be skipped, and a failure in any layer may cause communication issues.
+                The TCP/IP has 4 layers which is traveresed by data as it is processed. 
+                Data typically moves from the Application Layer down to the Network Access layer, 
+                where headers are appeneded for transmission. The receiver removes these headers as the 
+                data moves from bottom to top
             </p>
 
         </section>

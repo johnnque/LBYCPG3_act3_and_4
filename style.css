@@ -99,6 +99,15 @@ img {
     border: 2px solid #c5d1e0;
 }
 
+.altimg {
+    display: block;
+    margin: 0px;
+    max-width: 85%;
+    background-color: white;
+    padding: 0px;
+    border: 0px solid #c5d1e0;
+}
+
 ul {
     margin: 20px 60px;
     padding: 20px 30px 20px 50px;
