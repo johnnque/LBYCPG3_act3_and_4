@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>OSI Model - HTML5 Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="quizSection">
+            <button id="startQuizBtn">Start OSI Quiz</button>
+
+            <div id="quizArea" style="display:none;">
+
+                <h2>Match the Layer and Its Definition</h2>
+
+                <div class="quiz-container">
+
+                    <div class="layers">
+                        <h3>Layers</h3>
+
+                        <div id="layer-application" draggable="true" class="drag-layer" data-id="application">Application</div>
+                        <div id="layer-presentation" draggable="true" class="drag-layer" data-id="presentation">Presentation</div>
+                        <div id="layer-session" draggable="true" class="drag-layer" data-id="session">Session</div>
+                        <div id="layer-transport" draggable="true" class="drag-layer" data-id="transport">Transport</div>
+                        <div id="layer-network" draggable="true" class="drag-layer" data-id="network">Network</div>
+                        <div id="layer-datalink" draggable="true" class="drag-layer" data-id="datalink">Data Link</div>
+                        <div id="layer-physical" draggable="true" class="drag-layer" data-id="physical">Physical</div>
+                    </div>
+
+                    <div class="definitions">
+                        <h3>Definitions</h3>
+
+                        <div id="def-application" draggable="true" class="drag-def" data-id="application">Creates the data</div>
+                        <div id="def-presentation" draggable="true" class="drag-def" data-id="presentation">Formats and encrypts data</div>
+                        <div id="def-session" draggable="true" class="drag-def" data-id="session">Manages sessions</div>
+                        <div id="def-transport" draggable="true" class="drag-def" data-id="transport">Breaks into segments</div>
+                        <div id="def-network" draggable="true" class="drag-def" data-id="network">Routes packets</div>
+                        <div id="def-datalink" draggable="true" class="drag-def" data-id="datalink">Creates frames</div>
+                        <div id="def-physical" draggable="true" class="drag-def" data-id="physical">Transmits bits</div>
+                    </div>
+
+                </div>
+
+                <h3>Match Here:</h3>
+
+                <div class="match-area">
+
+                    <div class="match-row" data-id="application">
+                        <div class="drop-layer"></div>
+                        <div class="drop-def"></div>
+                    </div>
+
+                    <div class="match-row" data-id="presentation">
+                        <div class="drop-layer"></div>
+                        <div class="drop-def"></div>
+                    </div>
+
+                    <div class="match-row" data-id="session">
+                        <div class="drop-layer"></div>
+                        <div class="drop-def"></div>
+                    </div>
+
+                    <div class="match-row" data-id="transport">
+                        <div class="drop-layer"></div>
+                        <div class="drop-def"></div>
+                    </div>
+
+                    <div class="match-row" data-id="network">
+                        <div class="drop-layer"></div>
+                        <div class="drop-def"></div>
+                    </div>
+
+                    <div class="match-row" data-id="datalink">
+                        <div class="drop-layer"></div>
+                        <div class="drop-def"></div>
+                    </div>
+
+                    <div class="match-row" data-id="physical">
+                        <div class="drop-layer"></div>
+                        <div class="drop-def"></div>
+                    </div>
+
+                </div>
+
+                <button id="checkAnswers">Check Answers</button>
+                <p id="score"></p>
+
+            </div>
+        </section>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
