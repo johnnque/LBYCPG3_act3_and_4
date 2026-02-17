@@ -226,6 +226,22 @@ footer {
 }
 
 .dark-mode {
-  background-color: dimgray;
+  background-color: #0b3c7d;
   color: #eaf4f8; /* very light blue */
 }
+
+.dark-mode-header1 {
+  color: #eaf4f8; /* very light blue */
+  border-bottom: 4px solid #eaf4f8;
+}
+
+.dark-mode-header3 {
+  color: #eaf4f8; /* very light blue */
+}
+
+
+.dark-mode-footer{
+  background-color: #ffffff;
+  color: #eaf4f8; 
+}
+

@@ -168,6 +168,18 @@ function toggleDisplay(event) {
 }
 
 function switchcolors(){
-    var element1 = document.body
-    element1.classList.toggle("dark-mode")
+    var body = document.body;
+    body.classList.toggle("dark-mode");
+
+    var header_one = document.getElementsByTagName("H1");
+    let len = header_one.length;
+    for(let i = 0; i < len; i++){
+        header_one[i].classList.toggle("dark-mode-header1");
+    }
+
+    var header_three = document.getElementsByTagName("H3");
+    let len2 = header_one.length;
+    for(let i = 0; i < len2; i++){
+        header_three[i].classList.toggle("dark-mode-header3");
+    }
 }
