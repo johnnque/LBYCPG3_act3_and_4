@@ -48,30 +48,25 @@
         </section>
 
         <section>
-            <h2>Encapsulation and Data Flow</h2>
+            <h2 onclick=toggleDisplay(event)>1. Encapsulation and Data Flow ▼</h2>
 
-            <p>
+            <p class="toggleable">
                 The OSI layers are numbered from bottom to top, with the Physical Layer 
                 as Layer 1 and the Application Layer as Layer 7.
-            </p>
-
-            <p>
+                <br>
                 When data is sent, it starts at the Application Layer and travels 
                 downward through the layers. At each layer, additional information 
                 (headers) is added — a process known as <b>encapsulation</b>. 
                 These headers help identify the destination and manage communication.
-            </p>
-
-            <p>
+                <br>
                 When the data reaches the receiving device, the process is reversed. 
                 The data moves upward through the layers, and each layer removes its 
                 corresponding header — a process called <b>decapsulation</b>.
-            </p>
-
-            <p>
+                <br>
                 Each layer acts as a checkpoint in the communication process. No layer 
                 can be skipped, and a failure in any layer may cause communication issues.
             </p>
+
         </section>
 
     </main>

@@ -161,8 +161,10 @@ function toggleDisplay(event) {
     if (paragraph.classList.contains("toggleable")) {
         if (paragraph.style.display === "none") {
             paragraph.style.display = "block";
+            clickedHeading.textContent = clickedHeading.textContent.replace(/.$/,"▲")
         } else {
             paragraph.style.display = "none";
+            clickedHeading.textContent = clickedHeading.textContent.replace(/.$/,"▼")
         }
     }
 }
