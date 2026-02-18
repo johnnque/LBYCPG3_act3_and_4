@@ -55,7 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 }
             });
-            scoreDisplay.innerText = "Your Score: " + score + " / 7";
+
+            score = score + checkIdentification();
+            scoreDisplay.innerText = "Your Score: " + score + " / 10";
         });
     }
 
@@ -338,4 +340,36 @@ function switchcolors(){
         signatures[i].classList.toggle("dark-mode-footer");
     }
 
+}
+
+
+
+function checkIdentification(){
+    let identificationScore = 0;
+    answer1 = document.getElementById("Answer1").value.trim().toLowerCase();
+    answer2 = document.getElementById("Answer2").value.trim().toLowerCase();
+    answer3 = document.getElementById("Answer3").value.trim().toLowerCase();
+
+    if(answer1 === "open systems interconnection"){
+        identificationScore ++;
+        document.getElementById("Answer1").style.backgroundColor = "lightgreen";
+    } else {
+        document.getElementById("Answer1").style.backgroundColor = "lightcoral";
+    }
+
+    if(answer2 === "defense advanced research projects agency"){
+        identificationScore ++;
+        document.getElementById("Answer2").style.backgroundColor = "lightgreen";
+    } else {
+        document.getElementById("Answer2").style.backgroundColor = "lightcoral";
+    }
+
+    if(answer3 === "international organization for standardization"){
+        identificationScore++
+        document.getElementById("Answer3").style.backgroundColor = "lightgreen";
+    } else {
+        document.getElementById("Answer3").style.backgroundColor = "lightcoral";
+    }
+
+    return identificationScore; 
 }
